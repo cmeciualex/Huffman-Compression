@@ -27,7 +27,7 @@ bool Code::push_bit(Code *code,uint8_t bit) {
     uint8_t bit_index = code->top % 8;
 
     if (bit) {
-        code->bits[byte_index] |= (1 << bit_index);///ridic 1 la puterea bitindex care e 4(1*2^bit_index)
+        code->bits[byte_index] |= (1 << bit_index);
     } else {
         code->bits[byte_index] &= ~(1 << bit_index);
     }
